@@ -1,0 +1,43 @@
+.Images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.images {
+    width: 200px;
+}
+
+.images2 {
+    width: 275px;
+    height: 100px;
+}
+
+.carré {
+  width: 30%;
+  padding: 250px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+.centre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.centre p {
+	font-size: 24px;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px
+}
