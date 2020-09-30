@@ -1,3 +1,1 @@
 # LeBic-Monaco
-
-header
