@@ -165,3 +165,11 @@ a {
 .logo:hover {
     filter: invert(89%) sepia(16%) saturate(6827%) hue-rotate(358deg) brightness(106%) contrast(104%);
 }
+
+/* Décoration */
+
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+}
