@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#explanation {
+    margin: 10%;
+    width: 80%;
+}
+
+form {
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    padding: 10px;
+}
+
+#namePart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#namePart label {
+    text-decoration: underline;
+}
+
+#namePart input {
+    width: 30%;
+}
+
+.inputPlace {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.inputPlace label {
+    text-decoration: underline;
+}
+
+.inputPlace input {
+    width: 50%;    
+}
+
+.inputPlace select {
+    width: 50%;
+}
+
+hr {
+    margin: 20px 0;
+    width: 80%;
+    border: solid 1px;
+}
+
+form textarea {
+    width: 90%;
+    height: 150px;
+}
+

@@ -8,26 +8,53 @@
     </head>
     
     <body>
-        <div></div>
-
-        <form>
-            <div>
-                <div>
-                    <label></label>
-                    <input/>
-                    <label></label>
-                    <input/>
+        <div id="explanation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quibusdam non facere asperiores modi ipsam impedit repellendus sint eaque. Placeat a suscipit omnis commodi velit ex voluptates eum incidunt sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, aliquid? Esse nulla, possimus maxime neque recusandae consequuntur eaque inventore magnam voluptates? Beatae maxime mollitia deserunt laboriosam perspiciatis eaque voluptate tempora.</div>
+        <section>
+            <form>
+                <div id="inputsPart">
+                    <div id="namePart">
+                        <label for="lastName">Nom: </label>
+                        <input type="text" id="lastName" name="lastName"/>
+                        <label for="firstName">Prénom: </label>
+                        <input type="text" id="firstName" name="firstName"/>
+                    </div>
+                    <div class="inputPlace">
+                        <label for="mailAdress">Adresse mail: </label>
+                        <br/>
+                        <input type="text" id="mailAdress" name="mailAdress"/>
+                    </div>
+                    <div class="inputPlace">
+                        <label for="houseAdress">Adresse <em>(facultative)</em> :</label>
+                        <br/>
+                        <input type="text" id="houseAdress" name="houseAdress"/>
+                    </div>
+                    <div class="inputPlace">
+                        <label for="subjectSelect">Choisissez une option :</label>
+                        <br/>
+                        <select id="subjectSelect" name="subjectSelect">
+                            <option value="patrimoine">Patrimoine</option>
+                            <option value="evenement">Evènement</option>
+                            <option value="restaurant">Restaurant</option>
+                            <option value="hotel">Hôtel</option>
+                        </select>
+                    </div>
                 </div>
-                <label></label>
-                <input/>
-                <label></label>
-                <input/>
-                <label></label>
-                <select>
-                    <option></option>
-                </select>
+                <hr>
+                <textarea></textarea>
+                <button>Envoyer</button>
+            </form>
+        </section>
+
+        <section>
+            <div>
+                <img/>
+                <img/>
             </div>
-            <textarea></textarea>
-        </form>
+            <div>
+                <img/>
+                <img/>
+            </div>
+            <p></p>
+        </section>
     </body>
 </html>
