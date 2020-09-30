@@ -10,6 +10,16 @@ a {
     color: white;
 }
 
+
+.header-link > a:hover{
+    /* background-color: #ffd700; */
+    border: solid #ffd700 3px;
+
+    margin: 0;
+    padding: 12px;
+    border-radius: 500000000px;
+}
+
 .red {
     background-color: #CE1328;
 }
