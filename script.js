@@ -1,13 +1,32 @@
+/*JS Header */
+const mobileBurger = document.querySelector('.mobile-menuOpen');
+const mobileBurgerButton = document.querySelector('#burger-buttom');
+
+
+document.body.addEventListener('click', (e) => {
+    if (e.target !== mobileBurger && e.target !== mobileBurgerButton && mobileBurger.style.display === 'flex') { mobileBurger.style.display = 'none'};
+});
+
+
+mobileBurgerButton.addEventListener('click', () => {
+    mobileBurger.style.display = 'flex';
+});
+
+/*JS Home Page */
+
+
+
+
 const cards = document.querySelector(".cards");
 
 const eventList = [
   {
-    name: "Lucky",
-    picture: "https://placekitten.com/200/287"
+    name: "Ballets de Monte-Carlo, Monaco",
+    picture: "https://cdm0lfbn.cloudimg.io/v7/_origin_/image_uploader/photos/bd/original/ballets-de-monte-carlo-at-grimaldi-forum-monaco-monaco-2.jpg?p=large"
   },
   {
-    name: "Symba",
-    picture: "https://placekitten.com/200/139"
+    name: "Monte-Carlo Comedy Film Festival 2020",
+    picture: "https://cdm0lfbn.cloudimg.io/v7/_origin_/image_uploader/photos/11/original/monte-carlo-comedy-film-festival-2020-monte-carlo-monte-carlo.jpg?p=large"
   },
  
 ];
@@ -29,7 +48,7 @@ function createCard(title, imageUrl) {
     // Step1: Create the cardBody div, add the class card-body and add it to the card
     const cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
-    card.appendChild(cardBody);
+    cardHeader.appendChild(cardBody);
   
     // Step2: Create the cardTitle h2, add the class card-title,
     // set the text inside the tag to the "title" parameter of this function
@@ -39,18 +58,14 @@ function createCard(title, imageUrl) {
     cardTitle.innerHTML = `${title}`;
     cardBody.appendChild(cardTitle);
   
-    // Step3: Create the cardButton button, add the class card-button,
-    // set the text inside the tag to be "Adopt Now"
-    // and add it to the cardBody
-    const cardButton = document.createElement("button");
+    
+  /*  const cardButton = document.createElement("button");
     cardButton.classList.add("card-button");
     cardButton.innerHTML = "Adopt Now";
-    cardBody.appendChild(cardButton);
+    cardBody.appendChild(cardButton);*/
   }
+
   
-  /* Step 4: Create a for loop, for each element of the array, 
-   call the function createCard with the corresponding parameter */
-  
-  for (let i = 0; i < animalsToAdopt.length; i++) {
+  for (let i = 0; i < eventList.length; i++) {
     createCard(eventList[i].name, eventList[i].picture);
   }
