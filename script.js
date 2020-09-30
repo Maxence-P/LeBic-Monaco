@@ -1,6 +1,6 @@
 const cards = document.querySelector(".cards");
 
-const animalsToAdopt = [
+const eventList = [
   {
     name: "Lucky",
     picture: "https://placekitten.com/200/287"
@@ -52,5 +52,5 @@ function createCard(title, imageUrl) {
    call the function createCard with the corresponding parameter */
   
   for (let i = 0; i < animalsToAdopt.length; i++) {
-    createCard(animalsToAdopt[i].name, animalsToAdopt[i].picture);
+    createCard(eventList[i].name, eventList[i].picture);
   }
