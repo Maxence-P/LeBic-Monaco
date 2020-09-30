@@ -34,6 +34,10 @@
     margin: 5px 10px;
 }
 
+#copyrightSymbol {
+    width: 135px;
+}
+
 .logo:hover {
     filter: invert(89%) sepia(16%) saturate(6827%) hue-rotate(358deg) brightness(106%) contrast(104%);
 }
