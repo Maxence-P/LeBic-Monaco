@@ -167,6 +167,14 @@ img:nth-child(5) {
   color: white;
   font-family: 'Piazzolla', serif;;
 }
+
+.welcome-text {
+  text-align: center;
+  margin: 10%;
+  border-bottom: solid 3px #CE1328;
+  padding-bottom: 10%;
+}
+
 @media screen and (min-width: 500px) { 
   .pic-ctn > img {
     left: calc(45% - 100px);
@@ -195,14 +203,14 @@ img:nth-child(5) {
     max-height: 100px;
   }
   .separation {
-    height: 400px;
+    height: 300px;
   }
   .card-event > img {
     width: 25%;
   }
-}
-.welcome-text {
-  text-align: center;
+  .welcome-text {
+    padding-bottom: 5%;
+  }
 }
 
 #mapWindow {
