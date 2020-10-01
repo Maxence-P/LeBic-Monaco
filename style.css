@@ -99,7 +99,7 @@ h1 {
 }
 
 .separation {
-  height: 100px;
+  height: 150px;
 }
 @keyframes display {
   0% {
@@ -179,6 +179,9 @@ img:nth-child(5) {
   .card-event {
     width: 50%;
   }
+  .card-event:hover {
+    filter: grayscale(50%);
+  }
   .event {
     width: 100%;
   }
@@ -192,11 +195,14 @@ img:nth-child(5) {
     max-height: 100px;
   }
   .separation {
-    height: 450px;
+    height: 400px;
   }
   .card-event > img {
     width: 25%;
   }
+}
+.welcome-text {
+  text-align: center;
 }
 
 #mapWindow {
