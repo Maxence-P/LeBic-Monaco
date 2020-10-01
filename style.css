@@ -6,20 +6,28 @@
 }
 
 .images2-cgu {
-    width: 200px;
+    width: 25%;
 }
 
 .images-cgu {
-    width: 275px;
-    height: 100px;
+    width: 25%;
+    height: 5%;
+}
+
+
+@media screen and (max-width: 780px){
+    .carré{
+        width: 80%;
+    }
 }
 
 .carré {
-  width: 30%;
+  width: 50%;
   padding: 200px 0;
   display: flex;
-  margin-left: 35%;
-  margin-bottom: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   background-color: #CE1328;
   border-radius: 30px;
 }
