@@ -40,7 +40,7 @@ a {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
     .header-wrapper {
         display: none;
     }
@@ -125,11 +125,10 @@ a {
 #dateSection ul {
     font-size: 18px;
     list-style-type: circle;
-    margin: 15px;
 }
 
 #dateSection ul li {
-    margin: 15px;
+    margin: 20px 35px;
 }
 
 #articleSection {
