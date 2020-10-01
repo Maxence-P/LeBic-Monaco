@@ -22,9 +22,7 @@ mobileBurgerButton.addEventListener('click', () => {
     mobileBurger.style.display = 'flex';
 });
 
-
-
-interetMonument.addEventListener('click', () =>{
+interetMonument.addEventListener('click', () => {
     interet.monument = !interet.monument;
     if (interet.monument) {
         wrapperMonument.style.display = 'flex';
@@ -33,7 +31,7 @@ interetMonument.addEventListener('click', () =>{
     wrapperMonument.style.display = 'none';
 })
 
-interetAdresse.addEventListener('click', () =>{
+interetAdresse.addEventListener('click', () => {
     interet.goodAdresse = !interet.goodAdresse;
     if (interet.goodAdresse) {
         wrapperAdresse.style.display = 'flex';
@@ -42,7 +40,7 @@ interetAdresse.addEventListener('click', () =>{
     wrapperAdresse.style.display = 'none';
 })
 
-interetActivity.addEventListener('click', () =>{
+interetActivity.addEventListener('click', () => {
     interet.activity = !interet.activity;
     if (interet.activity) {
         wrapperActivity.style.display = 'flex';
