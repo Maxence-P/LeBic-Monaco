@@ -48,7 +48,7 @@ a {
     margin: 15px;
 }
 
-
+/* media nav bar */
 @media screen and (max-width: 400px) {
     .header-wrapper {
         display: none;
@@ -99,39 +99,6 @@ a {
     margin-top: 20px;
 }
 
-.wrapper-monument, .wrapper-adresses, .wrapper-activity {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 38px 0;
-}
-
-.card-interet {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 90%;
-    padding: 10px 25px;
-    margin: 25px 0 5px 0;
-    border: solid #ffd700 5px;
-    border-radius: 10px;
-}
-
-.card-interet img {
-    width: 100%;
-    /* height: 230px; */
-    object-fit: fill;
-    margin-right: 3%;
-    border: solid gray 2.5px;
-    border-radius: 100px;
-    margin-bottom: 8px;
-    
-}
-
-.dresc {
-    color: white;
-}
 
 @keyframes click-wave {
     0% {
@@ -198,4 +165,117 @@ a {
     display: block;
     position: relative;
     z-index: 1;
+}
+
+
+
+.wrapper-monument, .wrapper-adresses, .wrapper-activity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 20px;
+    color: white;
+}
+
+
+.debug-img {
+    padding: 2.3% 0;
+} 
+
+
+.h1-interet {
+    margin: 2% 5%;
+}
+
+.card-interet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    width: 33%;
+}
+
+.card-interet > img {
+    width: 100%;
+    max-height: 300px;
+    margin-bottom: 20px;
+} 
+
+
+
+/* media interet page */
+
+@media screen and (max-width: 400px) {
+    .wrapper-monument, .wrapper-adresses, .wrapper-activity {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 38px 0;
+    }
+    
+    .card-interet {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        padding: 10px 25px;
+        margin: 25px 0 5px 0;
+        border: solid #ffd700 5px;
+        border-radius: 10px;
+    }
+    
+    .card-interet img {
+        width: 100%;
+        object-fit: fill;
+        margin-right: 3%;
+        border: solid gray 2.5px;
+        border-radius: 100px;
+        margin-bottom: 8px;
+        
+    }
+    
+    .dresc {
+        color: white;
+    }
+}
+
+
+.footer {
+    background-color: #ce1328;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footerLinks {
+    text-align: center;
+}
+
+.footerLinks a:hover {
+    color: #ffd700;
+}
+
+.logo {
+    max-width: 35px;
+    max-height: 35px;
+    margin: 5px 10px;
+}
+
+#copyrightSymbol {
+    width: 180px;
+}
+
+.logo:hover {
+    filter: invert(89%) sepia(16%) saturate(6827%) hue-rotate(358deg) brightness(106%) contrast(104%);
 }

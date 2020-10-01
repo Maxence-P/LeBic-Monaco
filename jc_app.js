@@ -4,9 +4,9 @@ const mobileBurgerButton = document.querySelector('#burger-buttom');
 const interetMonument = document.querySelector('.monument-button');
 const interetAdresse = document.querySelector('.adresses-button');
 const interetActivity = document.querySelector('.activity-button');
-const wrapperActivity = document.querySelector('.wrapper-activity');
-const wrapperMonument = document.querySelector('.wrapper-monument');
-const wrapperAdresse = document.querySelector('.wrapper-adresses');
+const wrapperActivity = document.querySelectorAll('.wrapper-activity');
+const wrapperMonument = document.querySelectorAll('.wrapper-monument');
+const wrapperAdresse = document.querySelectorAll('.wrapper-adresses');
 
 const interet = {
     monument:true,
@@ -25,28 +25,39 @@ mobileBurgerButton.addEventListener('click', () => {
 interetMonument.addEventListener('click', () => {
     interet.monument = !interet.monument;
     if (interet.monument) {
-        wrapperMonument.style.display = 'flex';
+        wrapperMonument[0].style.display = 'flex';
+        wrapperMonument[1].style.display = 'flex';
+
         return;
     }
-    wrapperMonument.style.display = 'none';
+    wrapperMonument[0].style.display = 'none';
+    wrapperMonument[1].style.display = 'none';
+
 })
 
 interetAdresse.addEventListener('click', () => {
     interet.goodAdresse = !interet.goodAdresse;
     if (interet.goodAdresse) {
-        wrapperAdresse.style.display = 'flex';
+        wrapperAdresse[0].style.display = 'flex';
+        wrapperAdresse[1].style.display = 'flex';
+
         return;
     }
-    wrapperAdresse.style.display = 'none';
+    wrapperAdresse[0].style.display = 'none';
+    wrapperAdresse[1].style.display = 'none';
+
 })
 
 interetActivity.addEventListener('click', () => {
     interet.activity = !interet.activity;
     if (interet.activity) {
-        wrapperActivity.style.display = 'flex';
+        wrapperActivity[0].style.display = 'flex';
+        wrapperActivity[1].style.display = 'flex';
         return;
     };
-    wrapperActivity.style.display = 'none';
+    wrapperActivity[0].style.display = 'none';
+    wrapperActivity[1].style.display = 'none';
+
 });
 
 
