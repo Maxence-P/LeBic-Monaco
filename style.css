@@ -126,7 +126,7 @@ h1 {
   width: 80%;
   max-height: 100px;
   /*margin-top: 15vh;*/
-  padding-bottom: 20%;
+  padding-bottom: 5%;
 }
 
 .pic-ctn > img {
@@ -164,6 +164,7 @@ img:nth-child(5) {
 .card-event {
   display: flex;
   border: solid 3px #CE1328;
+  border-radius: 10px;
   width: 30%;
 }
 
