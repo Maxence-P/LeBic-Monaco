@@ -30,50 +30,57 @@
         </header>
 
         <div id="explanation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quibusdam non facere asperiores modi ipsam impedit repellendus sint eaque. Placeat a suscipit omnis commodi velit ex voluptates eum incidunt sapiente. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, aliquid? Esse nulla, possimus maxime neque recusandae consequuntur eaque inventore magnam voluptates? Beatae maxime mollitia deserunt laboriosam perspiciatis eaque voluptate tempora.</div>
-        <section>
+        
+        <section id="formSect">
             <form>
-                <div id="inputsPart">
-                    <div id="namePart">
-                        <label for="lastName">Nom: </label>
-                        <input type="text" id="lastName" name="lastName"/>
-                        <label for="firstName">Prénom: </label>
-                        <input type="text" id="firstName" name="firstName"/>
+                <div id="formBody">
+                    <div id="entryPart">
+                        <div id="namePart">
+                            <div>
+                                <label>Nom : </label>
+                                <input placeholder="ex: Legrand"/>
+                            </div>
+                            <div>
+                                <label>Prénom : </label>
+                                <input placeholder="ex: Eric"/>
+                            </div>
+                        </div>
+                        <div class="inputPart">
+                            <label>Adresse mail : </label>
+                            <input placeholder="ex: youknow@gmail.com"/>
+                        </div>
+                        <div class="inputPart">
+                            <label>Adresse <em>(facultatif)</em> : </label>
+                            <input/>
+                        </div>
+                        <div class="inputPart">
+                            <label>Choissisez un sujet : </label>
+                            <select>
+                                <option>-</option>
+                                <option>Evènement</option>
+                                <option>Hôtel</option>
+                                <option>Restaurant</option>
+                                <option>Activité</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="inputPlace">
-                        <label for="mailAdress">Adresse mail: </label>
-                        <br/>
-                        <input type="text" id="mailAdress" name="mailAdress"/>
-                    </div>
-                    <div class="inputPlace">
-                        <label for="houseAdress">Adresse <em>(facultative)</em> :</label>
-                        <br/>
-                        <input type="text" id="houseAdress" name="houseAdress"/>
-                    </div>
-                    <div class="inputPlace">
-                        <label for="subjectSelect">Choisissez une option :</label>
-                        <br/>
-                        <select id="subjectSelect" name="subjectSelect">
-                            <option value="patrimoine">Patrimoine</option>
-                            <option value="evenement">Evènement</option>
-                            <option value="restaurant">Restaurant</option>
-                            <option value="hotel">Hôtel</option>
-                        </select>
-                    </div>
+                    <hr>
+                    <textarea></textarea>
                 </div>
-                <hr>
-                <textarea></textarea>
-                <button>Envoyer</button>
+                <button id="sendBtn">Envoyer</button>
             </form>
         </section>
 
         <section id="ourCorner">
-            <div class="facePart">
-                <img class="ourFace" src="unknown.jpg" />
-                <img class="ourFace" src="unknown.jpg" />
-            </div>
-            <div class="facePart">
-                <img class="ourFace" src="unknown.jpg" />
-                <img class="ourFace" src="unknown.jpg" />
+            <div id="desktopFace">
+                <div class="facePart">
+                    <img class="ourFace" src="unknown.jpg" />
+                    <img class="ourFace" src="unknown.jpg" />
+                </div>
+                <div class="facePart">
+                    <img class="ourFace" src="unknown.jpg" />
+                    <img class="ourFace" src="unknown.jpg" />
+                </div>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In debitis quia iusto libero assumenda ex eveniet officiis ad exercitationem earum voluptatum, sapiente consequatur recusandae dolorum laudantium. Quo explicabo quam harum!</p>
         </section>

@@ -72,18 +72,48 @@ a {
 /* contact us */
 
 #explanation {
-    margin: 10%;
+    border-left: black solid 1px;
     width: 80%;
+    height: auto;
+    padding: 5px;
+    margin: 10px;
+}
+
+#formSect {
+    height: 500px;
 }
 
 form {
     border: black solid 1px;
+    border-radius: 15px;
+    background-color: #CE1328;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 5%;
-    padding: 10px;
+    width: 90%;
+    height: 450px;
+}
+
+#formBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+#entryPart {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    margin: 15px 0;
 }
 
 #namePart {
@@ -91,85 +121,155 @@ form {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-}
-
-#namePart label {
-    text-decoration: underline;
+    width: 90%;
 }
 
 #namePart input {
-    width: 30%;
+    background-color: lightgrey;
+    width: 90px;
+    text-align: center;
 }
 
-.inputPlace {
+.inputPart {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
+    width: 90%;
 }
 
-.inputPlace label {
-    text-decoration: underline;
+.inputPart input {
+    background-color: lightgrey;
+    text-align: center;
 }
 
-.inputPlace input {
-    width: 50%;    
-}
-
-.inputPlace select {
-    width: 50%;
+.inputPart select {
+    background-color: lightgrey;
+    width: 160px;
 }
 
 hr {
-    margin: 20px 0;
+    border: black solid 1px;
+    width: 70%;
+    margin: 15px 0;
+}
+
+textarea {
+    background-color: lightgrey;
     width: 80%;
-    border: solid 1px;
+    height: 200px;
+    margin: 15px 0;
 }
 
-form textarea {
-    width: 90%;
-    height: 150px;
-}
-
-form button {
-    width: 20%;
-    height: 30px;
+#sendBtn {
     background-color: white;
-    margin: 20px 0 10px 0;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    margin: 15px 0;
 }
 
-form button:hover {
+#sendBtn:hover {
     background-color: gold;
+}
+
+@media screen and (min-width: 800px) {
+    #explanation {
+        width: 60%;
+        margin: 50px;
+    }
+    
+    #formSect {
+        height: 400px;
+    }
+
+    form {
+        width: 80%;
+        height: 400px;
+        margin: 100px 10%;
+    }
+
+    #formBody {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #entryPart {
+        border-right: black solid 1px;
+        align-items: center;
+        width: 85%;
+        margin: 0 10px;
+    }
+
+    #namePart {
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    .inputPart {
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    hr {
+        display: none;
+    }
+
+    textarea {
+        margin: 0 10px;
+    }
 }
 
 #ourCorner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+    justify-content: space-evenly;
+    height: 400px;
+    margin: 5%;
 }
 
 .facePart {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    width: 80%;
-    height: 110px;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
 }
 
 .ourFace {
-    width: 100px;
-    height: 100px;
     border: black solid 1px;
-    border-radius: 50%;
+    border-radius: 60px;
+    width: 120px;
+    height: 120px;
 }
 
 #ourCorner p {
-    width: 90%;
-    height: auto;
-    margin: 10px;
+    border-top: black solid 1px;
+    padding: 10px 0;
+}
+
+@media screen and (min-width: 800px) {
+    #ourCorner {
+        margin-top: 10%;
+    }
+
+    #desktopFace {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .facePart {
+        justify-content: space-around;
+    }
+
+    #ourCorner p {
+        width: 80%;
+        margin: 10%;
+    }
 }
 
 /* footer */
