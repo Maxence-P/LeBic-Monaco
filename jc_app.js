@@ -7,57 +7,60 @@ const interetActivity = document.querySelector('.activity-button');
 const wrapperActivity = document.querySelectorAll('.wrapper-activity');
 const wrapperMonument = document.querySelectorAll('.wrapper-monument');
 const wrapperAdresse = document.querySelectorAll('.wrapper-adresses');
+const wrapperHeader = document.querySelector('.header-wrapper');
+const wrapperHeaderMobile = document.querySelector('.mobile-header');
 
 const interet = {
-    monument:true,
-    goodAdresse:true,
-    activity:true,
+    monument: true,
+    goodAdresse: true,
+    activity: true,
+};
+
+window.onscroll = () => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        wrapperHeader.style.opacity = .8;
+        wrapperHeaderMobile.style.opacity = .8;
+    } else {
+        wrapperHeader.style.opacity = 1;
+        wrapperHeaderMobile.style.opacity = 1;
+    };
 };
 
 document.addEventListener('click', (e) => {
-    if (e.target !== mobileBurger && e.target !== mobileBurgerButton && mobileBurger.style.display === 'flex') { mobileBurger.style.display = 'none'};
+    if (e.target !== mobileBurger && e.target !== mobileBurgerButton && mobileBurger.style.display === 'flex') { 
+        mobileBurger.style.display = 'none';
+        mobileBurgerButton.src = './image/burger.png';
+    };
 });
 
 mobileBurgerButton.addEventListener('click', () => {
-    mobileBurger.style.display = 'flex';
+    if (mobileBurger.style.display === 'none' || mobileBurger.style.display === '') {
+        mobileBurger.style.display = 'flex';
+        mobileBurgerButton.src = './image/close.png';
+        return;
+    };
+    mobileBurger.style.display = 'none';
+    mobileBurgerButton.src = './image/burger.png';
 });
+
+const setdisplay = (div, dis) => {div[0].style.display = dis; div[1].style.display = dis; };
 
 interetMonument.addEventListener('click', () => {
     interet.monument = !interet.monument;
-    if (interet.monument) {
-        wrapperMonument[0].style.display = 'flex';
-        wrapperMonument[1].style.display = 'flex';
-
-        return;
-    }
-    wrapperMonument[0].style.display = 'none';
-    wrapperMonument[1].style.display = 'none';
-
+    if (interet.monument) { return setdisplay(wrapperMonument, 'flex'); };
+    setdisplay(wrapperMonument, 'none');    
 })
 
 interetAdresse.addEventListener('click', () => {
     interet.goodAdresse = !interet.goodAdresse;
-    if (interet.goodAdresse) {
-        wrapperAdresse[0].style.display = 'flex';
-        wrapperAdresse[1].style.display = 'flex';
-
-        return;
-    }
-    wrapperAdresse[0].style.display = 'none';
-    wrapperAdresse[1].style.display = 'none';
-
+    if (interet.goodAdresse) { return setdisplay(wrapperAdresse, 'flex'); };
+    setdisplay(wrapperAdresse, 'none');
 })
 
 interetActivity.addEventListener('click', () => {
     interet.activity = !interet.activity;
-    if (interet.activity) {
-        wrapperActivity[0].style.display = 'flex';
-        wrapperActivity[1].style.display = 'flex';
-        return;
-    };
-    wrapperActivity[0].style.display = 'none';
-    wrapperActivity[1].style.display = 'none';
-
+    if (interet.activity) { return setdisplay(wrapperActivity, 'flex'); };
+    setdisplay(wrapperActivity, 'none');
 });
 
 
