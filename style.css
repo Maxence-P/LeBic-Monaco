@@ -1,3 +1,131 @@
+
+
+
+/*HEADER*/
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+}
+
+body {
+  background-image: url("https://media.istockphoto.com/vectors/abstract-3d-cube-pattern-background-white-3d-box-seamless-background-vector-id947324414?b=1&k=6&m=947324414&s=612x612&w=0&h=ZxeIJgeMNC0JI-TueG6ByRghzfS6NSclXm9obi3e39k=");
+  background-repeat: repeat;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.red {
+    background-color: #CE1328;
+}
+
+.mobile-header, .mobile-menuOpen {
+    display: none;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.icone-header {
+    width: 75px;
+    margin-right: 15px;
+}
+
+.header-link {
+    margin-left: 15px;
+}
+
+.header-link > a {
+    margin: 15px;
+}
+
+
+@media screen and (max-width: 400px) {
+    .header-wrapper {
+        display: none;
+    }
+    .mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+    }
+    
+    .icone-header {
+        width: 35px;
+        margin: 5px;
+    }
+    
+    .mobile-menuOpen {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* margin-left: 20%; */
+    }
+    
+    .mobile-menuOpen > a {
+        margin: 10px;
+    }
+}
+
+/*ARTICLE*/
+
+.articleImg{
+    width: 50%;
+    border-radius: 15px;
+    border: black solid 4px;
+}
+
+.titleSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2%;
+}
+
+.titleSection h1{
+    border: black solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.titlePlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.4;
+    width: 30%;
+    height: 200px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.zoneTexte{
+    width: 70%;
+    text-align: center;
+    margin: 5% 15%;
+    font-size: 20px;
+
+}
+
+
+
+/*CGU*/
+
 .Images-cgu{
     display: flex;
     justify-content: space-between;
@@ -70,80 +198,6 @@ span:hover{
 
 
 
-
-/*HEADER*/
-
-
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-.red {
-    background-color: #CE1328;
-}
-
-.mobile-header, .mobile-menuOpen {
-    display: none;
-}
-
-.header-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-}
-
-.icone-header {
-    width: 75px;
-    margin-right: 15px;
-}
-
-.header-link {
-    margin-left: 15px;
-}
-
-.header-link > a {
-    margin: 15px;
-}
-
-
-@media screen and (max-width: 400px) {
-    .header-wrapper {
-        display: none;
-    }
-    .mobile-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 50px;
-    }
-    
-    .icone-header {
-        width: 35px;
-        margin: 5px;
-    }
-    
-    .mobile-menuOpen {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        /* margin-left: 20%; */
-    }
-    
-    .mobile-menuOpen > a {
-        margin: 10px;
-    }
-}
 
 
 /*FOOTER*/
