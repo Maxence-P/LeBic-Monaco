@@ -3,9 +3,9 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     color: white;
 }
@@ -39,7 +39,7 @@
 }
 
 .debug {
-    height: 50px;
+    height: 80px;
 }
 
 .icone-header {
@@ -180,55 +180,55 @@
     z-index: 1;
 }
 
-  /*-------Home Page CSS----------*/
-  
-  
-  html, body {
+/*-------Home Page CSS----------*/
+
+
+html, body {
     margin: 0;
     padding: 0;
     /*overflow: hidden;*/
-  }
-  
-  h1 {
+}
+
+h1 {
     text-align: center;
     padding-bottom: 1%;
     color: gold;
     font-size: 40px;
     text-shadow: 2px 1px 0px rgba(150, 150, 150, 1);
-  }
-  
-  .separation {
+}
+
+.separation {
     height: 150px;
-  }
-  @keyframes display {
+}
+@keyframes display {
     0% {
-      transform: translateX(100px);
-      opacity: 0;
+        transform: translateX(100px);
+        opacity: 0;
     }
     10% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
     20% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
     30% {
-      transform: translateX(-200px);
-      opacity: 0;
+        transform: translateX(-200px);
+        opacity: 0;
     }
     100% {
-      transform: translateX(-200px);
-      opacity: 0;
+        transform: translateX(-200px);
+        opacity: 0;
     }
-  }
-  
-  .pic-ctn {
+}
+
+.pic-ctn {
     position: relative;
     width: 80%;
-  }
-  
-  .pic-ctn > img {
+}
+
+.pic-ctn > img {
     border: solid 3px #CE1328;
     border-radius: 10px;
     width: 50%;
@@ -237,107 +237,107 @@
     left: calc(75% - 100px);
     opacity: 0;
     animation: display 10s infinite;
-  }
-  
-  img:nth-child(2) {
+}
+
+img:nth-child(2) {
     animation-delay: 2s;
-  }
-  img:nth-child(3) {
+}
+img:nth-child(3) {
     animation-delay: 4s;
-  }
-  img:nth-child(4) {
+}
+img:nth-child(4) {
     animation-delay: 6s;
-  }
-  img:nth-child(5) {
+}
+img:nth-child(5) {
     animation-delay: 8s;
-  }
-  
-  .event {
+}
+
+.event {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     height: 500px;
     width: 100%;
-  }
-  
-  .card-text {
+}
+
+.card-text {
     padding: 5%;
     color: white;
     font-family: 'Piazzolla', serif;;
-  }
-  
-  .welcome-text {
+}
+
+.welcome-text {
     text-align: center;
     margin: 10%;
     border-bottom: solid 3px #CE1328;
     padding-bottom: 10%;
-  }
-  
-  @media screen and (min-width: 500px) { 
+}
+
+@media screen and (min-width: 500px) { 
     .pic-ctn > img {
-      left: calc(45% - 100px);
+        left: calc(45% - 100px);
     }
-  
+    
     .content-ctn {
-      display: flex;
-      width : 100%;
+        display: flex;
+        width : 100%;
     }
     .card-event {
-      width: 50%;
+        width: 50%;
     }
     .card-event:hover {
-      filter: grayscale(50%);
+        filter: grayscale(50%);
     }
     .event {
-      width: 100%;
+        width: 100%;
     }
     .map {
-      display: flex;
-      width: 50%;
-      align-items: center;
-      justify-content: center;
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
     }
     .pic-ctn {
-      max-height: 100px;
+        max-height: 100px;
     }
     .separation {
-      height: 300px;
+        height: 300px;
     }
     .card-event > img {
-      width: 25%;
+        width: 25%;
     }
     .welcome-text {
-      padding-bottom: 5%;
+        padding-bottom: 5%;
     }
-  }
-  
-  #mapWindow {
+}
+
+#mapWindow {
     border: solid 3px #FFD700;
     border-radius: 5px;
-  }
-  .card-event {
+}
+.card-event {
     display: flex;
     border: solid 3px #FFD700;
     border-radius: 10px;
     width: 75%;
     background-color: #CE1328;
-  }
-  
-  
-  .card-event > img {
+}
+
+
+.card-event > img {
     width: 25%;
-  }
-  
-  .map {
+}
+
+.map {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
     padding: 5%;
-  }
+}
 
-  #headSection {
+#headSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -405,7 +405,7 @@
 }
 
 article {
-  text-align: center;
+    text-align: center;
     width: 90%;
     height: auto;
     margin: 15px 5% 15px 5%;
@@ -426,30 +426,30 @@ article {
         width: 50%;
         border-right: black solid 2px;
     }
-
+    
     #prsnCardTop {
         border-bottom: black solid 2px;
         width: 100%;
     }
-
+    
     .breakLine {
         display: none;
     }
-
+    
     #dateSection {
         width: 50%;
     }
-
+    
     #articleSection {
         justify-content: space-evenly;
         padding: 50px 15px;
     }
-
+    
     article {
         width: 70%;
         margin: 0;
     }
-
+    
     #imgtxt {
         display: flex;
         border: black solid 1px;
@@ -458,89 +458,85 @@ article {
     }
 }
 
- /* Page Intérêt */
-  
+/* Page Intérêt */
+
 .wrapper-monument, .wrapper-adresses, .wrapper-activity{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 30px 20px;
-  color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 20px;
+    color: white;
 }
 
 .debug-img {
-  padding: 2.3% 0;
+    padding: 2.3% 0;
 } 
 
 .h1-interet {
-  margin: 2% 5%;
-  color: black;
+    margin: 2% 5%;
+    color: black;
 }
 
 .card-interet {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px;
-  width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    width: 33%;
 }
 
 .card-interet > img {
-  width: 100%;
-  max-height: 300px;
-  margin-bottom: 20px;
+    width: 100%;
+    max-height: 300px;
+    margin-bottom: 20px;
 } 
 
 /* media interet page */
 
 @media screen and (max-width: 500px) {
-  .wrapper-monument, .wrapper-adresses, .wrapper-activity {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 38px 0;
-  }
-  
-  .card-interet {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      width: 90%;
-      padding: 10px 25px;
-      margin: 25px 0 5px 0;
-      border: solid #ffd700 5px;
-      border-radius: 10px;
-  }
-  
-  .card-interet img {
-      width: 100%;
-      object-fit: fill;
-      margin-right: 3%;
-      border: solid gray 2.5px;
-      border-radius: 100px;
-      margin-bottom: 8px;
-      
-  }
-  
-  .dresc {
-      color: white;
-  }
+    .wrapper-monument, .wrapper-adresses, .wrapper-activity {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 38px 0;
+    }
+    
+    .card-interet {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        padding: 10px 25px;
+        margin: 25px 0 5px 0;
+        border: solid #ffd700 5px;
+        border-radius: 10px;
+    }
+    
+    .card-interet img {
+        width: 100%;
+        object-fit: fill;
+        margin-right: 3%;
+        border: solid gray 2.5px;
+        border-radius: 100px;
+        margin-bottom: 8px;
+        
+    }
+    
+    .dresc {
+        color: white;
+    }
 }
 
-  /* Contact Us */
+/* Contact Us */
 
-  #explanation {
+#explanation {
     border-left: black solid 1px;
     width: 80%;
     height: auto;
     padding: 5px;
     margin: 10px;
-}
-
-#formSect {
-    height: 500px;
 }
 
 form {
@@ -551,9 +547,10 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5%;
+    margin: 5% 5% 0;
     width: 90%;
     height: 450px;
+    box-shadow: 0px 0px 17px 0.5px rgba(80, 80, 80, 0.75);
 }
 
 #formBody {
@@ -633,6 +630,40 @@ textarea {
     background-color: gold;
 }
 
+.arrowDown {
+    width: 5%;
+    filter: grayscale(100);
+    color: #ffd700;
+
+}
+
+.arrowDown:hover {
+    filter: invert(49%) sepia(10%) saturate(6000%) hue-rotate(358deg) brightness(1006%) contrast(104%);
+}
+
+.reponseFrom {
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    display: none;
+}
+
+.comName, .comMsg {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+.reponseFrom hr {
+    width: 100%;
+}
+
+
+
 @media screen and (min-width: 800px) {
     #explanation {
         width: 60%;
@@ -642,39 +673,39 @@ textarea {
     #formSect {
         height: 400px;
     }
-
+    
     form {
         width: 80%;
         height: 400px;
         margin: 100px 10%;
     }
-
+    
     #formBody {
         display: flex;
         flex-direction: row;
     }
-
+    
     #entryPart {
         border-right: black solid 1px;
         align-items: center;
         width: 85%;
         margin: 0 10px;
     }
-
+    
     #namePart {
         justify-content: space-between;
         width: 95%;
     }
-
+    
     .inputPart {
         justify-content: space-between;
         width: 95%;
     }
-
+    
     hr {
         display: none;
     }
-
+    
     textarea {
         margin: 0 10px;
     }
@@ -713,7 +744,7 @@ textarea {
     #ourCorner {
         margin-top: 10%;
     }
-
+    
     #desktopFace {
         display: flex;
         flex-direction: row;
@@ -721,20 +752,20 @@ textarea {
         width: 100%;
         height: auto;
     }
-
+    
     .facePart {
         justify-content: space-around;
     }
-
+    
     #ourCorner p {
         width: 80%;
         margin: 10%;
     }
 }
 
-  /*FOOTER */
-  
-  .footer {
+/*FOOTER */
+
+.footer {
     background-color: #ce1328;
     position: relative;
     bottom: 0;
@@ -743,31 +774,31 @@ textarea {
     align-items: center;
     width: 100%;
     height: 100px;
-  }
-  
-  .footer a {
+}
+
+.footer a {
     text-decoration: none;
     color: black;
-  }
-  
-  .footerLinks {
+}
+
+.footerLinks {
     text-align: center;
-  }
-  
-  .footerLinks a:hover {
+}
+
+.footerLinks a:hover {
     color: #ffd700;
-  }
-  
-  .logo {
+}
+
+.logo {
     max-width: 35px;
     max-height: 35px;
     margin: 5px 10px;
-  }
-  
-  #copyrightSymbol {
+}
+
+#copyrightSymbol {
     width: 180px;
-  }
-  
-  .logo:hover {
+}
+
+.logo:hover {
     filter: invert(89%) sepia(16%) saturate(6827%) hue-rotate(358deg) brightness(106%) contrast(104%);
-  }
+}

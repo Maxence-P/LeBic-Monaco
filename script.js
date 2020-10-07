@@ -8,6 +8,10 @@ const wrapperMonument = document.querySelectorAll('.wrapper-monument');
 const wrapperAdresse = document.querySelectorAll('.wrapper-adresses');
 const wrapperHeader = document.querySelector('.header-wrapper');
 const wrapperHeaderMobile = document.querySelector('.mobile-header');
+const valueForm = document.querySelectorAll('.getmyvalue');
+const reponseForm = document.querySelector('.reponseFrom');
+const formContact = document.querySelector('#formContact');
+const arrowDown = document.querySelector('.arrowDown');
 
 const interet = {
     monument: true,
@@ -45,22 +49,40 @@ mobileBurgerButton.addEventListener('click', () => {
     wrapperHeaderMobile.style.boxShadow = "0px 5px 4px 0px rgba(80, 80, 80, 0.75)";
 });
 
-const setdisplay = (div, dis) => {div[0].style.display = dis; div[1].style.display = dis; };
+const createMessageForm = (tab) => {
+    tab.author = tab.firstName + ' ' + tab.lastName + ' | ' + tab.mail;
+    if (tab.adresse) { tab.author = tab.author + ' | ' + tab.adresse };
+    const comName = document.createElement('div');
+    comName.innerText = tab.author;
+    comName.classList.add('comName');
+    reponseForm.appendChild(comName);
+    const comMsg = document.createElement('div');
+    comMsg.innerText = tab.msg;
+    comMsg.classList.add('comMsg');
+    comName.appendChild(comMsg);
+    const hr = document.createElement('hr');
+    comName.appendChild(hr);
+};
 
-interetMonument.addEventListener('click', () => {
-    interet.monument = !interet.monument;
-    if (interet.monument) { return setdisplay(wrapperMonument, 'flex'); };
-    setdisplay(wrapperMonument, 'none');    
-})
 
-interetAdresse.addEventListener('click', () => {
-    interet.goodAdresse = !interet.goodAdresse;
-    if (interet.goodAdresse) { return setdisplay(wrapperAdresse, 'flex'); };
-    setdisplay(wrapperAdresse, 'none');
-})
+const getFormValue = () => {
+    const tab = {};
+    valueForm.forEach((el) => tab[el.id] = el.value);
+    return tab;
+};
 
-interetActivity.addEventListener('click', () => {
-    interet.activity = !interet.activity;
-    if (interet.activity) { return setdisplay(wrapperActivity, 'flex'); };
-    setdisplay(wrapperActivity, 'none');
+formContact.addEventListener('submit', (e) => {
+    e.preventDefault();
+    createMessageForm(getFormValue());
 });
+
+
+arrowDown.addEventListener('click', () => {
+    if (reponseForm.style.display !== 'block') {
+        reponseForm.style.display = 'block';
+        arrowDown.style.transform = 'rotate(180deg)';
+        return
+    }
+    reponseForm.style.display = 'none';
+    arrowDown.style.transform = 'rotate(0deg)';
+})
