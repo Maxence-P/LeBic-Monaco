@@ -13,8 +13,12 @@
 body {
   background-image: url("https://media.istockphoto.com/vectors/abstract-3d-cube-pattern-background-white-3d-box-seamless-background-vector-id947324414?b=1&k=6&m=947324414&s=612x612&w=0&h=ZxeIJgeMNC0JI-TueG6ByRghzfS6NSclXm9obi3e39k=");
   background-repeat: repeat;
+  -ms-overflow-style: none;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
 
 .header-link > a:hover{
     border: solid #ffd700 3px;
