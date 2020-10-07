@@ -1,3 +1,5 @@
+/*-------HEADER---------------*/
+
 * {
   padding: 0;
   margin: 0;
@@ -86,16 +88,22 @@ a {
 html, body {
   margin: 0;
   padding: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
   /*overflow: hidden;*/
 }
 
-h1 {
+.title {
   text-align: center;
   padding-bottom: 1%;
   color: gold;
   font-size: 40px;
   text-shadow: 2px 1px 0px rgba(150, 150, 150, 1);
 }
+
+#mainTitle {
+  font-size: 100px;
+}
+
 /* introductive text*/
 .welcome-text {
   text-align: center;
@@ -116,6 +124,7 @@ body {
 }
 .img-carou {
   vertical-align: middle;
+  border: solid 3px #CE1328;
   max-height: 600px;
   border-radius: 15px;
 }
@@ -190,7 +199,7 @@ body {
 /*article section */
 .ctn-article {
  display: flex;
- padding: 10%;
+ padding: 0% 10% 10% 10%;
  flex-direction: column;
  border-bottom: solid 3px #CE1328;
  margin: 5%;
@@ -198,6 +207,8 @@ body {
 
 .article-card {
   border: black solid 2px;
+  background-color: #CE1328;
+  color: white;
   border-radius: 15px;
   display: flex;
   max-height: 200px;
@@ -208,17 +219,37 @@ body {
   width: 50%;
   border-radius: 15px 0px 0px 15px;
 }
+
 .articleLign {
+  background-color: #49363c;
+  border-radius: 15px 15px 0px 0px;
   display: flex;
   flex-direction: column;
-  
+  text-align: center;
+}
+#lign2 {
+  border-radius: 0px 0px 15px 15px;
 }
 
 .articleTitle {
-
+  text-align: center;
+  margin-bottom: 5%;
+  border: solid 1px white;
+  border-radius: 0px 15px 15px 0px;
+  background-color: white;
+  color: #49363c;
 }
+
+.article-card:hover {
+  background-color: #a65959;
+  box-shadow: 7px 0px 20px 6px rgba(255,255,255,0.63);
+  /*color: black;*/
+}
+
 .article-card:hover .articleImg {
-  transform: scale(1.02) rotate(10deg);
+  filter: grayscale(100%);
+  transition: 1s ease-in;
+  transform: rotate(360deg);
 }
 /* event section */
 .event {
