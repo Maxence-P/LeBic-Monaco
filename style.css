@@ -679,6 +679,11 @@ textarea {
         height: 400px;
         margin: 100px 10%;
     }
+
+    .reponseFrom {
+        width: 70%;
+        margin-left: 15%;
+    }
     
     #formBody {
         display: flex;
