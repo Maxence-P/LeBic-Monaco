@@ -198,7 +198,7 @@ body::-webkit-scrollbar{
     /*overflow: hidden;*/
   }
   
-  h1 {
+  #titleHome {
     text-align: center;
     padding-bottom: 1%;
     color: gold;
@@ -465,6 +465,56 @@ article {
         width: 20%;
         height: auto;
     }
+}
+
+/* les Articles */
+
+.articleImg{
+  width: 50%;
+  border-radius: 15px;
+  border: black solid 4px;
+}
+
+.titleSection{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2%;
+}
+
+.titleSection h1{
+  border: black solid 2px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.titlePlace{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  opacity: 0.4;
+  color: rgb(255, 255, 255);
+  width: 30%;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.zoneTexte{
+  background-color: #CE1328;
+  opacity: 0.6;
+  color: rgb(255, 255, 255);
+  width: 70%;
+  text-align: center;
+  margin: 5% 15%;
+  font-size: 20px;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.zoneTexte p{
+  width: 80%;
+  margin: 0 10%;
 }
 
  /* Page Intérêt */
