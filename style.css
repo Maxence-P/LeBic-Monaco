@@ -599,10 +599,6 @@ article {
     margin: 10px;
 }
 
-#formSect {
-    height: 500px;
-}
-
 form {
     border: black solid 1px;
     border-radius: 15px;
@@ -611,9 +607,10 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5%;
+    margin: 5% 5% 0;
     width: 90%;
     height: 450px;
+    box-shadow: 0px 0px 17px 0.5px rgba(80, 80, 80, 0.75);
 }
 
 #formBody {
@@ -693,6 +690,40 @@ textarea {
     background-color: gold;
 }
 
+.arrowDown {
+    width: 5%;
+    filter: grayscale(100);
+    color: #ffd700;
+
+}
+
+.arrowDown:hover {
+    filter: invert(49%) sepia(10%) saturate(6000%) hue-rotate(358deg) brightness(1006%) contrast(104%);
+}
+
+.reponseFrom {
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    display: none;
+}
+
+.comName, .comMsg {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+.reponseFrom hr {
+    width: 100%;
+}
+
+
+
 @media screen and (min-width: 800px) {
     #explanation {
         width: 60%;
@@ -702,39 +733,44 @@ textarea {
     #formSect {
         height: 400px;
     }
-
+    
     form {
         width: 80%;
         height: 400px;
         margin: 100px 10%;
     }
+    
+    .reponseFrom {
+      width: 70%;
+      margin-left: 15%;
+  }
 
     #formBody {
         display: flex;
         flex-direction: row;
     }
-
+    
     #entryPart {
         border-right: black solid 1px;
         align-items: center;
         width: 85%;
         margin: 0 10px;
     }
-
+    
     #namePart {
         justify-content: space-between;
         width: 95%;
     }
-
+    
     .inputPart {
         justify-content: space-between;
         width: 95%;
     }
-
+    
     hr {
         display: none;
     }
-
+    
     textarea {
         margin: 0 10px;
     }
@@ -773,7 +809,7 @@ textarea {
     #ourCorner {
         margin-top: 10%;
     }
-
+    
     #desktopFace {
         display: flex;
         flex-direction: row;
@@ -781,11 +817,11 @@ textarea {
         width: 100%;
         height: auto;
     }
-
+    
     .facePart {
         justify-content: space-around;
     }
-
+    
     #ourCorner p {
         width: 80%;
         margin: 10%;
