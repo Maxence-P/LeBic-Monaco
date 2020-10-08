@@ -498,7 +498,7 @@ textarea {
     }
     
     #entryPart {
-        border-right: black solid 1px;
+        border-right: white solid 1px;
         align-items: center;
         width: 85%;
         margin: 0 10px;
