@@ -1,6 +1,11 @@
 body {
-    background-image: url("https://media.istockphoto.com/vectors/abstract-3d-cube-pattern-background-white-3d-box-seamless-background-vector-id947324414?b=1&k=6&m=947324414&s=612x612&w=0&h=ZxeIJgeMNC0JI-TueG6ByRghzfS6NSclXm9obi3e39k=");
+    background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
     background-repeat: repeat;
+    -ms-overflow-style: none;
+  }
+
+  body::-webkit-scrollbar{
+    display: none;
   }
 
 .Images-cgu{
@@ -19,42 +24,51 @@ body {
     height: 5%;
 }
 
+.carré {    
+    width: 80%;
+    padding: 100px 0;
+    display: flex;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    background-color: #CE1328;
+    border-radius: 30px;
+  }
+  
+  .centre {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .centre h1 {
+      width: 400px;
+  }
+  
+  .centre p {
+      font-size: 24px;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      margin: 0 50px;
+  }
 
 @media screen and (max-width: 780px){
     .carré{
         width: 80%;
     }
+
+    .centre h1 {
+        width: 200px;
+    }
+
+    span {
+        width: 80%;
+    }
 }
-
-.carré {
-  width: 50%;
-  padding: 200px 0;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 300px;
-  background-color: #CE1328;
-  border-radius: 30px;
-}
-
-.centre {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-
-
-.centre p {
-	font-size: 24px;
-	color: rgb(0, 0, 0);
-    text-align: center;
-    margin: 0 50px;
-}
-
 
 span{ 
     color: #CE1328;
@@ -85,7 +99,6 @@ span:hover{
     text-decoration: none;
     color: white;
 }
-
 
 .header-link > a:hover{
     border: solid #ffd700 3px;
@@ -256,9 +269,7 @@ span:hover{
     z-index: 1;
 }
 
-
 /*FOOTER*/
-
 
 * {
     margin: 0;
