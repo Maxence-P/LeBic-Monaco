@@ -336,8 +336,10 @@
   }
   
   .articleTitle {
-    text-align: center;
-    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
     border: solid 1px white;
     background-color: white;
     color: #49363c;
