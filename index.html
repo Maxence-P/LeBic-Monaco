@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="homeStyle.css">
     <link rel="icon" href="src/favicon.ico" />
-    <script src="script.js" async ></script>
+    <script src="homeScript.js" async ></script>
 </head>
 <body>
     <header>
@@ -31,21 +31,81 @@
         </div>
         <div class="debug"></div>
     </header>
-    <h1 id="titleHome">Monaco</h1>
-    <div class="pic-ctn">
-        <img src="src/port-Nuit-Monaco.jpg" alt="" class="pic">
-        <img src="src/guard-1816731_1920.jpg" alt="" class="pic">
-        <img src="src/football-3574711_1920.jpg" alt="" class="pic">
-        <img src="src/bronze-5046566_1920.jpg" alt="" class="pic">
-        <img src="src/formula-1-3746878_1920.jpg" alt="" class="pic">
-    </div>
-    <div class="separation">
-    </div>
+    <h1 class="title" id="mainTitle">Monaco</h1>
     <p class="welcome-text">Bonjour à vous chers visiteur. <br />
-        Ce site à pour objectif de présenter notre belle ville Monaco, permettant aux touristes de trouver les services nécessaire à la un séjour de qualité, mais également permettre au locaux de visiter les plus belles pépites de notre patrimoine</p>  
+        Ce site à pour objectif de présenter notre belle ville Monaco, permettant aux touristes de trouver les services nécessaire à la un séjour de qualité, mais également permettre au locaux de visiter les plus belles pépites de notre patrimoine</p> 
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <!--div class="numbertext">1 / 3</div>-->
+          <img src="src/bronze-5046566_1920.jpg" class = "img-carou" style="width:100%">
+          <div class="text">Bronze Statue</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <!--<div class="numbertext">2 / 3</div>-->
+          <img src="src/football-3574711_1920.jpg" class = "img-carou" style="width:100%">
+          <div class="text">A.S Monaco</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <!--<div class="numbertext">3 / 3</div>-->
+          <img src="src/formula-1-3746878_1920.jpg" class = "img-carou" style="width:100%">
+          <div class="text">Race Chamiopship</div>
+        </div>
+        <div class="mySlides fade">
+            <!--<div class="numbertext">3 / 3</div>-->
+            <img src="src/guard-1816731_1920.jpg" class = "img-carou" style="width:100%">
+            <div class="text">Royal guard</div>
+          </div>    
+    </div>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span> 
+        </div>
+    <div class ="ctn-article">
+        <h1 class="title">Articles</h1>
+        <div class="articleLign">
+            <div class="article-card">
+                <img class="articleImg" src="src/article1.jpg"/>
+                <a href="article1.html">
+                    <h3 class="articleTitle">Exposition interactive: "Immersion"</h3>
+                    <p class ="articleEntete"> Plongez sur la Grande Barrière de Corail au Musée océanographique de Monaco, à la rencontre de ses espèces les plus emblématiques!</p>
+                </a>
+                
+               
+            </div>
+            <div class="article-card">
+                <img class="articleImg" src="src/article2.jpg"/>
+                <a href="article2.html">
+                    <h3 class="articleTitle">Artifices instables: Histoires de céramiques</h3>
+                    <p class ="articleEntete">Rendez-vous à la Villa Sauber pour la prochaine exposition du Nouveau Musée National de Monaco : Artifices Instables, Histoires de Céramiques.</p>
+                </a>
+            </div>
+        </div>
+        <div class="articleLign" id="lign2">
+            <div class="article-card">
+                <img class="articleImg" src="src/article3.jpg"/>
+                <a href="article3.html">
+                    <h3 class="articleTitle">Les ballets de Monte-Carlo</h3>
+                    <p class ="articleEntete">Les Ballets de Monte-Carlo, le retour sur scène est devenu un rendez-vous incontournable en Principauté.</p>
+                </a>
+            </div>
+            <div class="article-card">
+                <img class="articleImg" src="src/article4.jpg"/>
+                <a href="article4.html">
+                    <h3 class="articleTitle">Monte-Carlo Film Festival de la Comédie 2020</h3>
+                    <p class ="articleEntete">Considéré comme l'un des festivals de cinéma les plus importants dédié à la comédie.</p>
+                </a>
+            </div>
+        </div>        
+    </div>  
     <div class="content-ctn">
         <div class="event">
-            <h1>Events</h1>
+            <h1 class="title">Events</h1>
             <div class = "card-event">
                 <img src="https://cdm0lfbn.cloudimg.io/v7/_origin_/image_uploader/photos/4c/original/e-rallye-monte-carlo-2020-monaco-monaco.jpg?p=large"/>
                 <h2 class="card-text">e-Rallye Monte-Carlo 2020, Monaco</h2>
@@ -66,15 +126,15 @@
     </div>
     <footer class="footer">
             <div id="copyrightSymbol">
-                <a href="cgu.html"><img class="logo" src="src/copyright-symbol.png" alt="copyright's symbol" /></a>
+                <a href="cgu.html"><img class="logo" src="./src/copyright-symbol.png" alt="copyright's symbol" /></a>
             </div>
             <div class="footerLinks">
                 <a href="https://www.wildcodeschool.com/fr-FR" target="_blank">Wild Code School</a>
             </div>
             <div>
-                <a href="https://twitter.com/MairieMonaco" target="_blank"><img class="logo" src="src/twitter-symbol.png" alt="twitter's symbol" /></a>
-                <a href="https://fr-fr.facebook.com/MairieMonaco/" target="_blank"><img class="logo" src="src/facebook-symbol.png" alt="facebook's symbol" /></a>
-                <a href="https://www.instagram.com/mairiedemonaco/" target="_blank"><img class="logo" src="src/instagram-symbol.png" alt="instagram's symbol" /></a>
+                <a href="https://twitter.com/MairieMonaco" target="_blank"><img class="logo" src="./src/twitter-symbol.png" alt="twitter's symbol" /></a>
+                <a href="https://fr-fr.facebook.com/MairieMonaco/" target="_blank"><img class="logo" src="./src/facebook-symbol.png" alt="facebook's symbol" /></a>
+                <a href="https://www.instagram.com/mairiedemonaco/" target="_blank"><img class="logo" src="./src/instagram-symbol.png" alt="instagram's symbol" /></a>
             </div>
         </footer>
 </body>
