@@ -413,15 +413,9 @@ form {
     width: 160px;
 }
 
-.reponseFrom hr {
-    border: black solid 1px;
-    width: 70%;
-    margin: 0;
-}
-
-.reponseFrom hr {
-  border: black solid 1px;
-  width: 70%;
+.formLine {
+  border: white solid 1px;
+  width: 80%;
   margin: 15px 0;
 }
 
@@ -477,13 +471,6 @@ textarea {
     text-align: center;
 }
 
-
-.reponseFrom hr {
-    width: 100%;
-}
-
-
-
 @media screen and (min-width: 800px) {
     #explanation {
         width: 60%;
@@ -527,8 +514,8 @@ textarea {
         width: 95%;
     }
     
-    hr {
-        display: none;
+    .formLine {
+      display: none;
     }
     
     textarea {

@@ -7,6 +7,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
+  body::-webkit-scrollbar{
+    display: none;
+  }
+
   a {
     text-decoration: none;
     color: white;
@@ -103,7 +107,6 @@
     margin-top: 10px;
 }
 
-
 .wrapper-button > label {
     display: flex;
     align-items: center;
@@ -113,7 +116,6 @@
 .wrapper-button > label > .button-text {
     margin-top: 20px;
 }
-
 
 @keyframes click-wave {
     0% {
@@ -188,7 +190,7 @@
     margin: 0;
     padding: 0;
     background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
-    /*overflow: hidden;*/
+    -ms-overflow-style: none;
   }
   
   .title {
@@ -334,11 +336,17 @@
   }
   
   .articleTitle {
-    text-align: center;
-    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
     border: solid 1px white;
     background-color: white;
     color: #49363c;
+  }
+
+  .articleEntete {
+    margin-bottom: 5px;
   }
   
   .article-card:hover {
