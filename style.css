@@ -88,17 +88,18 @@ body::-webkit-scrollbar{
     
     .mobile-menuOpen {
         display: none;
-        margin-top: 50px;
+        margin-top: 10%;
         /* position: relative; */
         flex-direction: column;
         align-items: center;
         width: 100%;
+        height: 100vh;
         z-index: 99;
         /* margin-left: 20%; */
     }
     
     .mobile-menuOpen > a {
-        margin: 10px;
+        margin: 10%;
     }
 }
 
@@ -381,6 +382,7 @@ body::-webkit-scrollbar{
 .breakLine {
     background-color: black;
     border: black solid 1px;
+    width: 100%;
 }
 
 #dateSection {
@@ -668,7 +670,13 @@ form {
 hr {
     border: black solid 1px;
     width: 70%;
-    margin: 15px 0;
+    margin: 0;
+}
+
+.reponseFrom hr {
+  border: black solid 1px;
+  width: 70%;
+  margin: 15px 0;
 }
 
 textarea {
@@ -676,6 +684,12 @@ textarea {
     width: 80%;
     height: 200px;
     margin: 15px 0;
+}
+
+.confirme {
+  color: white;
+  text-decoration: overline;
+  display: none;
 }
 
 #sendBtn {

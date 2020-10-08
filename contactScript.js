@@ -37,6 +37,14 @@ const valueForm = document.querySelectorAll('.getmyvalue');
 const reponseForm = document.querySelector('.reponseFrom');
 const formContact = document.querySelector('#formContact');
 const arrowDown = document.querySelector('.arrowDown');
+const confirm = document.querySelector('.confirme');
+
+const drawAlert = () => {
+    confirm.style.display = 'block';
+    setTimeout(() => {
+        confirm.style.display = 'none';
+    }, 3500);
+};
 
 const createMessageForm = (tab) => {
     tab.author = tab.firstName + ' ' + tab.lastName + ' | ' + tab.mail;
@@ -51,12 +59,12 @@ const createMessageForm = (tab) => {
     comName.appendChild(comMsg);
     const hr = document.createElement('hr');
     comName.appendChild(hr);
+    drawAlert();
 };
-
 
 const getFormValue = () => {
     const tab = {};
-    valueForm.forEach((el) => tab[el.id] = el.value);
+    valueForm.forEach((el) => {tab[el.id] = el.value; el.value = ''});
     return tab;
 };
 
@@ -71,7 +79,7 @@ arrowDown.addEventListener('click', () => {
         reponseForm.style.display = 'block';
         arrowDown.style.transform = 'rotate(180deg)';
         return
-    }
+    };
     reponseForm.style.display = 'none';
-    arrowDown.style.transform = 'rotate(0deg)';
-})
+    arrowDown.style.transform = 'rotate(0deg)'; 
+});
