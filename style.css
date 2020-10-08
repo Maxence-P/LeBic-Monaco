@@ -678,6 +678,13 @@ textarea {
     margin: 15px 0;
 }
 
+.confirme {
+  color: white;
+  text-decoration: overline;
+  display: none;
+}
+
+
 #sendBtn {
     background-color: white;
     border-radius: 10px;
