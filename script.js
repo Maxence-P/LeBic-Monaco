@@ -19,9 +19,11 @@ window.onscroll = () => {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         wrapperHeader.style.opacity = .8;
         wrapperHeaderMobile.style.opacity = .8;
+        mobileBurger.style.opacity = .8;
     } else {
         wrapperHeader.style.opacity = 1;
         wrapperHeaderMobile.style.opacity = 1;
+        mobileBurger.style.opacity = 1;
     };
 };
 

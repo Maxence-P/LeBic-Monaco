@@ -88,18 +88,18 @@ body::-webkit-scrollbar{
     
     .mobile-menuOpen {
         display: none;
-        margin-top: 10%;
-        /* position: relative; */
+        margin-top: 50px;
+        position: fixed;
+        top: 0;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 100vh;
-        z-index: 99;
+        z-index: 5;
         /* margin-left: 20%; */
     }
     
     .mobile-menuOpen > a {
-        margin: 10%;
+        margin: 10px;
     }
 }
 
@@ -667,7 +667,7 @@ form {
     width: 160px;
 }
 
-hr {
+.reponseFrom hr {
     border: black solid 1px;
     width: 70%;
     margin: 0;
