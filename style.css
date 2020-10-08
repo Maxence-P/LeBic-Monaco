@@ -101,7 +101,7 @@ html, body {
 }
 
 #mainTitle {
-  font-size: 100px;
+  font-size: 80px;
 }
 
 /* introductive text*/
@@ -209,16 +209,20 @@ body {
   border: black solid 2px;
   background-color: #CE1328;
   color: white;
-  border-radius: 15px;
+  border-radius: 20px;
   display: flex;
-  max-height: 200px;
+  flex-direction: column;
+  max-height: 300px;
   margin: 2%;
+  max-width: 100%;
 }
 
 .articleImg {
-  width: 50%;
-  border-radius: 15px 0px 0px 15px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
 }
+
+
 
 .articleLign {
   background-color: #49363c;
@@ -235,7 +239,6 @@ body {
   text-align: center;
   margin-bottom: 5%;
   border: solid 1px white;
-  border-radius: 0px 15px 15px 0px;
   background-color: white;
   color: #49363c;
 }
@@ -259,13 +262,13 @@ body {
   justify-content: space-evenly;
   height: 500px;
   width: 100%;
-  
 }
 
 .card-text {
   padding: 5%;
   color: white;
-  font-family: 'Piazzolla', serif;;
+  font-family: 'Piazzolla', serif;
+  height: 100px;
 }
 
 
@@ -274,15 +277,30 @@ body {
   .welcome-text {
     padding-bottom: 5%;
   }
+  
   .articleLign{
     flex-direction: row;
   }
+  .article-card {
+    flex-direction: row;
+    max-width: 46%;
+    max-height: 200px;
+  }
+  .articleImg{
+    border-radius: 15px 0px 0px 15px;
+    width:50%
+  }
+  .articleTitle {
+    border-radius: 0px 15px 0px 0px;
+  }
+  /*event*/
   .content-ctn {
     display: flex;
     width : 100%;
   }
   .card-event {
     width: 50%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   }
   .card-event:hover {
     filter: grayscale(50%);
@@ -293,6 +311,8 @@ body {
   .card-event > img {
     width: 25%;
   }
+  
+  /*map*/
   .map {
     display: flex;
     width: 50%;
@@ -309,7 +329,7 @@ body {
   border: solid 3px #FFD700;
   border-radius: 10px;
   width: 75%;
-  background-color: #CE1328;
+  background-color: #f53d3d;
 }
 
 
