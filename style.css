@@ -300,6 +300,11 @@ body::-webkit-scrollbar{
   margin-bottom: 20px;
 } 
 
+.card-interet:hover > img {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
 /* media interet page */
 
 @media screen and (max-width: 500px) {
